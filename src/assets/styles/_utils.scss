@@ -1,0 +1,50 @@
+.button {
+  display: inline-block;
+  background-image: url("../images/menu.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+}
+
+.button--dot {
+  background-image: url("../images/dot.svg");
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.button--profile {
+  background-image: url("../images/profile.png");
+  width: 32px;
+  height: 32px;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.display {
+  display: none;
+}
+
+.input {
+  line-height: 25px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0 0 0 19px;
+  font-size: 18px;
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 1;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+}
