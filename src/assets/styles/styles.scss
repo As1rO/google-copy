@@ -12,6 +12,13 @@
   justify-content: space-between;
   max-height: 48px;
 
+
+  @include md{
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
   & div {
     display: flex;
     align-items: center;
@@ -58,5 +65,73 @@
     width: 160px;
     height: 72px;
     margin: 36px auto 18px auto;
+
+    @include sm{
+      width: 272px;
+      height: 92px;
+      margin-top: 142px;
+    }
   }
 }
+
+.bar-flex{
+  display: flex;
+  align-items: center;
+  border: 1px solid #dadce0;
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+
+  @include md{
+    width: 60%;
+  }
+  
+}
+
+.bar-img{
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+ 
+}
+
+
+
+.lg-flex{
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 24px;
+
+  @include md {
+    font-size: 1.5rem;
+  }
+}
+
+.lg-flex__el{
+padding: 4px;
+}
+
+
+.lg-flex__el button{
+  background: transparent;
+  border: 0;
+  color: #1967d2;
+  }
+
+.display-b{
+  display: none;
+
+  @include md{
+    display: inline;
+    margin-top: 35px;
+  }
+
+  & button{
+    padding: 15px 25px;
+    border: none;
+    background-color: #f8f9fa;
+    letter-spacing: 1.3px;
+  }
+}
+
